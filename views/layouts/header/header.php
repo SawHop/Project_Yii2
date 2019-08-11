@@ -1,26 +1,29 @@
-<?php
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
-use yii\helpers\Html;
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Инста</a>
+            </li>
+        </ul>
 
-NavBar::begin([
-    'brandLabel' => '<img width="50" height="30" src="/source/win.jpg">',
-    'brandUrl' => Yii::$app->homeUrl,
-    'options' => [
-        'class' => 'navbar-inverse navbar-fixed-top',
-    ],
-
-]);
-echo Nav::widget([
-    'options' => ['class' => 'navbar-nav navbar-right', 'id' => 'qwe'],
-    'items' => [
-        ['label' => 'Инста',],
-        ['label' => 'Главная', 'url' => ['/site/index']],
-        ['label' => 'Цвет', 'url' => ['/site/about']],
-        ['label' => 'О себе', 'url' => ['/site/contact']],
-        ['label' => 'Связаться со мной', 'url' => ['/site/contact']],
-    ],
-]);
-NavBar::end();
-?>
+        <ul class="navbar-nav my-2 my-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Цвет</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">О себе</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Связаться со мной</a>
+            </li>
+        </ul>
+    </div>
+</nav>
