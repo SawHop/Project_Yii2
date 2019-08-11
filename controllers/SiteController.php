@@ -53,7 +53,7 @@ class SiteController extends Controller
             ],
         ];
     }
-
+    public $layout = "project";
     /**
      * Displays homepage.
      *
