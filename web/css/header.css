@@ -1,6 +1,57 @@
+.firstPartNav {
+  background: url(../source/background.jpg);
+  height: 200px; }
+  .firstPartNav .logoTitle {
+    font-size: 80px;
+    color: red; }
+
+div.firstPartNav {
+  position: relative; }
+
+div.firstPartNav p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+#navbarSupportedContent a {
+  color: #ffffff; }
+
 .navbar {
   height: 100px;
+  background: #bfd05e;
   border-radius: 0px; }
   .navbar li {
     font-size: 16px;
-    padding-left: 100px; }
+    color: #f3dc8c;
+    width: 150px;
+    text-align: center;
+    height: 100px;
+    padding-top: 20px; }
+  .navbar li a:hover {
+    background: #f3dc8c;
+    color: red; }
+  .navbar li:hover {
+    background: #f3dc8c;
+    color: red; }
+
+.nav-item {
+  color: red; }
+
+.navbar-brand {
+  margin-left: 60px;
+  margin-bottom: 40px; }
+
+.navbar-nav.my-2.my-lg-0 {
+  margin-right: 100px; }
+
+.navbar-collapse.collapse {
+  background: #bfd05e; }
+
+.body {
+  background: url(../source/background.jpg);
+  height: 1000px; }

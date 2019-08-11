@@ -12,6 +12,7 @@ class ProjectAsset extends AssetBundle
     public $css = [
         'css/site.css',
         'css/header.css',
+        'css/footer.css',
     ];
     public $js = [
     ];
@@ -19,8 +20,4 @@ class ProjectAsset extends AssetBundle
         'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapAsset',
     ];
-}
-
-{
-
 }

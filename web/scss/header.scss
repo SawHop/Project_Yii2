@@ -1,9 +1,78 @@
+.firstPartNav{
+  background: url(../source/background.jpg);
+  //opacity: 0.5;
+  height: 200px;
+  .logoTitle{
+    font-size: 80px;
+    color:red;
+  }
+}
+div.firstPartNav {
+  position: relative }
+div.firstPartNav p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) }
+
+
+$greenColor: #bfd05e;
+$yellowColor: #f3dc8c;
+
+#navbarSupportedContent a {
+  color: #ffffff;
+}
+
 .navbar {
-  li {
+  //margin-top: 200px;
+  li{
     font-size: 16px;
-    padding-left: 100px;
+    color: $yellowColor;
+    width: 150px;
+    text-align: center;
+    height: 100px;
+    padding-top: 20px;
+
+  }
+
+  li a:hover {
+    background: #f3dc8c;
+    color:red;
+  }
+
+  li:hover {
+    background: #f3dc8c;
+    color:red;
   }
 
   height: 100px;
+  background: $greenColor;
+
   border-radius: 0px;
+}
+
+.nav-item{
+  color:red;
+}
+
+
+.navbar-brand {
+    margin-left: 60px;
+    margin-bottom: 40px;
+}
+
+.navbar-nav.my-2.my-lg-0{
+  margin-right: 100px;
+}
+
+.navbar-collapse.collapse{
+  background: $greenColor;
+}
+
+.body{
+  background: url(../source/background.jpg);
+  //opacity: 0.5;
+  height: 1000px;
 }

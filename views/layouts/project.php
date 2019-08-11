@@ -31,22 +31,12 @@ ProjectAsset::register($this);
 <div class="wrap">
     <?=$this->render("header/header") ?>
 
-    <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= Alert::widget() ?>
+<!--    <div class="container">-->
         <?= $content ?>
-    </div>
+<!--    </div>-->
 </div>
 
-<footer class="footer">
-    <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-
-        <p class="pull-right"><?= Yii::powered() ?></p>
-    </div>
-</footer>
+<?=$this->render("footer/footer") ?>
 
 <?php $this->endBody() ?>
 </body>
