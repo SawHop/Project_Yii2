@@ -2,17 +2,6 @@
   font-family: milkshake;
   src: url(../fonts/Milkshake.otf); }
 
-.myNav {
-  font-size: 20px;
-  font-family: sans-serif; }
-  .myNav .insta {
-    width: 100px;
-    float: right;
-    margin-right: 250px;
-    margin-top: 100px; }
-  .myNav .upperBlock {
-    font-family: milkshake; }
-
 .firstPartNav {
   background: url(../source/backgroundUp.jpg) no-repeat;
   background-size: 100%;
@@ -20,9 +9,20 @@
   height: 200px; }
   .firstPartNav .logoTitle {
     font-size: 100px;
-    color: #ff1d15;
-    font-style: italic;
+    color: red;
+    font-style: italic; }
+
+.myNav {
+  font-size: 20px;
+  font-family: sans-serif; }
+  .myNav .insta {
+    width: 100px;
+    float: right;
+    margin-right: 250px;
+    margin-top: 100px;
     opacity: 1; }
+  .myNav .upperBlock {
+    font-family: milkshake; }
 
 div.upperBlock {
   position: relative; }
@@ -43,24 +43,25 @@ div.upperBlock p {
 
 .navbar {
   height: 100px;
-  background: #bfd05e;
   border-radius: 0px; }
   .navbar li {
     font-size: 16px;
-    color: #f3dc8c;
     width: 150px;
     text-align: center;
     height: 100px;
     padding-top: 20px; }
   .navbar li a:hover {
-    background: #f3dc8c;
-    color: red; }
+    background: #f3dc8c; }
   .navbar li:hover {
-    background: #f3dc8c;
-    color: red; }
+    background: #f3dc8c; }
+
+.navbar.navbar-expand-lg {
+  padding: 0rem; }
 
 .nav-item {
-  color: red; }
+  border-right: thick solid #f3dc8c; }
+  .nav-item:last-child {
+    border-right: none; }
 
 .navbar-brand {
   margin-left: 60px;
@@ -70,7 +71,11 @@ div.upperBlock p {
   margin-right: 100px; }
 
 .navbar-collapse.collapse {
-  background: #bfd05e; }
+  width: 110%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c3d062), to(#bfd05e));
+  background-image: -webkit-linear-gradient(#c3d062, #bfd05e);
+  background-image: -o-linear-gradient(#c3d062, #bfd05e);
+  background-image: linear-gradient(#c3d062, #bfd05e); }
 
 .navbar-nav.mr-auto {
   padding-left: 100px; }
