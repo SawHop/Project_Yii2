@@ -4,33 +4,26 @@
   font-family: milkshake;
   src: url(../fonts/Milkshake.otf);
 }
-//todo opcaity 1 for child elements
-.firstPartNav{
+
+.backgroundTopBlock{
   background: url(../source/backgroundUp.jpg) no-repeat;
   background-size: 100%;
   opacity: 0.7;
   height: 200px;
-  .logoTitle{
-    font-size: 100px;
-    color: red;
-    font-style: italic;
-  }
 }
 
 .myNav{
   font-size: 20px;
   font-family: sans-serif;
 
-  .insta{
-    width: 100px;
-    float: right;
-    margin-right: 250px;
-    margin-top: 100px;
-    opacity: 1;
-  }
-
   .upperBlock{
     font-family: milkshake;
+  }
+
+  .logoTitle{
+    font-size: 100px;
+    color: red;
+    font-style: italic;
   }
 }
 
@@ -42,8 +35,21 @@ div.upperBlock p {
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  margin-top: 100px;
+  margin-top: -100px;
   transform: translate(-50%, -50%) }
+
+  div.downBlock{
+    position: relative;
+    width: 100px;
+    float: right;
+  }div.downBlock img{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -60px;
+    transform: translate(-50%, -50%) }
 
 
 #navbarSupportedContent a {
@@ -74,6 +80,7 @@ div.upperBlock p {
 
 .navbar.navbar-expand-lg{
   padding: 0rem;
+  width: 100%;
 }
 .nav-item{
   border-right: thick solid $yellowColor;
@@ -92,7 +99,6 @@ div.upperBlock p {
 }
 
 .navbar-collapse.collapse{
-  width: 110%;
   background-image: linear-gradient(#c3d062, $greenColor);
 }
 

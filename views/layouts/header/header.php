@@ -1,11 +1,14 @@
 <div class="myNav">
     <div class="firstPartNav">
+        <div class="backgroundTopBlock"></div>
         <div class="upperBlock">
             <div class="logoTitle"><p>My.yarn</p></div>
         </div>
-        <a class="insta" href="#">
-            <img src="../source/insta.png" alt="insta">
-        </a>
+        <div class="downBlock">
+            <a class="insta" href="#">
+                <img src="../source/insta.png" alt="insta">
+            </a>
+        </div>
     </div>
 
     <nav class="navbar navbar-expand-lg">
